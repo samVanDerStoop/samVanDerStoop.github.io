@@ -1,4 +1,3 @@
 # My Personal GitHub Page
 
-My first online site
-Hosted at https://www.samvanderstoop.github.io
+My first online site, hosted [here](https://samvanderstoop.github.io)
