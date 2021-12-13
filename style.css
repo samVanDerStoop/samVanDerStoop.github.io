@@ -1,0 +1,32 @@
+:root {
+    --clr-primary: #191919;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #000;
+
+    --clr-accent-primary: #CCC;
+    --clr-accent-secondary: #dbdce0;
+
+    --ff-primary: Arial, Helvetica, sans-serif;
+    --ff-accent: Arial, Helvetica, sans-serif;
+}
+
+/*reset*/
+button, input {
+    all: initial;
+}
+
+/*global styles*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+/*styles*/
