@@ -223,3 +223,45 @@ footer {
         font-size: 1.3125rem;
     }
 }
+
+
+@media only screen and (min-width: 1024px) {
+        
+    /*header styles*/
+    header ul {
+        font-size: 1.625rem;
+    }
+    
+    /*hero section styles*/
+    #hero > p:last-of-type {
+        font-size: 1.625rem;
+    }    
+    
+    .hero-container > p:first-of-type {
+        font-size: 2rem;
+    }
+    .hero-container > h1 {
+        font-size: 6rem;
+    }
+    .hero-container h1 > span {
+        font-size: 1.25rem;
+        top: 4.125em;
+    }
+        
+    /*projects section styles*/
+    #projects > h2 {
+        font-size: 3rem;
+        padding-top: 0.5em;
+    }
+    .column > h3 {
+        font-size: 2rem;
+    }
+    .link-description {
+        font-size: 1.625rem;
+    }
+        
+    /*footer styles*/
+    footer {
+        font-size: 1.625rem;
+    }
+}
