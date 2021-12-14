@@ -104,13 +104,19 @@ header li > a:hover {
     position: relative;
     font-family: var(--ff-primary);
 }
-.hero-container h1 > span {
+.hero-container h1 > #span1 {
     font-size: 0.75rem;
 
     position: absolute;
     top: 2.5rem;
 }
+/*
 .hero-container h1 > span::after {
+    content: "\a";
+    white-space: pre;
+}*/
+
+.new-line::after {
     content: "\a";
     white-space: pre;
 }
@@ -197,7 +203,7 @@ footer {
     .hero-container > h1 {
         font-size: 4rem;
     }
-    .hero-container h1 > span {
+    .hero-container h1 > #span1 {
         font-size: 1rem;
         top: 3.3125em;
     }
@@ -249,7 +255,7 @@ footer {
     .hero-container > h1 {
         font-size: 6rem;
     }
-    .hero-container h1 > span {
+    .hero-container h1 > #span1 {
         font-size: 1.25rem;
         top: 4.125em;
     }
