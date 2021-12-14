@@ -39,6 +39,8 @@ ul {
 }
 
 /*styles*/
+
+/*header styles*/
 header ul {
     position: fixed;
     z-index: 1;
@@ -62,6 +64,7 @@ header li > a:hover {
     padding: 0 2px 2px 0;
 }
 
+/*hero section styles*/
 #hero {
     min-height: 100vh;
     /*max-width: 100vw;*/
@@ -112,22 +115,30 @@ header li > a:hover {
     white-space: pre;
 }
 
-#mid {
+/*projects section styles*/
+#projects {
     font-size: 1rem;
     font-family: var(--ff-primary);
     background: linear-gradient(var(--clr-neutral-100), var(--clr-accent-primary));
     padding: 1.5em 0.5em;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
-#mid > h2 {
+#projects > h2 {
     font-size: 2rem;
     font-family: var(--ff-primary);
     padding-bottom: 1em;
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /*margin: 0 auto;*/
+}
+
 .column {
     max-width: 15rem;
     margin-bottom: 1.3em;
@@ -149,6 +160,7 @@ header li > a:hover {
     max-width: 50ch;
 }
 
+/*footer styles*/
 footer {
     background-color: var(--clr-primary);
     background-image: url(https://picsum.photos/id/1002/300/400?grayscale&blur=2);
@@ -160,4 +172,54 @@ footer {
 
     text-align: center;
     padding: 1.5em 0.5em;
+}
+
+/*responsive styles*/
+
+@media only screen and (min-width: 600px) {
+        
+    /*header styles*/
+    header ul {
+        font-size: 1.3125rem;
+    }
+    
+    /*hero section styles*/
+    #hero > p:last-of-type {
+        font-size: 1.3125rem;
+    }    
+    
+    .hero-container > p:first-of-type {
+        font-size: 1.75rem;
+    }
+    .hero-container > h1 {
+        font-size: 4rem;
+    }
+    .hero-container h1 > span {
+        font-size: 1rem;
+        top: 3.3125em;
+    }
+        
+    /*projects section styles*/
+    #projects > h2 {
+        font-size: 2.625rem;
+        padding-top: 0.3125em;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .column > h3 {
+        font-size: 1.625rem;
+    }
+    .link-description {
+        font-size: 1.3125rem;
+    }
+        
+    /*footer styles*/
+    footer {
+        font-size: 1.3125rem;
+    }
 }
